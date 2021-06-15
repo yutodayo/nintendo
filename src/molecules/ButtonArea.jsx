@@ -1,5 +1,8 @@
 import { useHistory } from "react-router-dom";
-import { PrimaryButton } from "../button/PrimaryButton";
+import { HighschoolButton } from "../button/HighschoolButton";
+import { MotivationButton } from "../button/MotivationButton";
+import { ProfileButton } from "../button/ProfileButton";
+import { UnivButton } from "../button/UnivButton";
 
 export const ButtonArea = () => {
   const history = useHistory();
@@ -10,12 +13,12 @@ export const ButtonArea = () => {
 
   return (
     <div>
-      <PrimaryButton onClick={onClickProfile}>自己紹介</PrimaryButton>
-      <PrimaryButton onClick={onClickHighschool}>
+      <ProfileButton onClick={onClickProfile}>自己紹介</ProfileButton>
+      <HighschoolButton onClick={onClickHighschool}>
         高校での取り組み
-      </PrimaryButton>
-      <PrimaryButton onClick={onClickUniv}>大学での取り組み</PrimaryButton>
-      <PrimaryButton onClick={onClickMotivation}>志望動機</PrimaryButton>
+      </HighschoolButton>
+      <UnivButton onClick={onClickUniv}>大学での取り組み</UnivButton>
+      <MotivationButton onClick={onClickMotivation}>志望動機</MotivationButton>
     </div>
   );
 };

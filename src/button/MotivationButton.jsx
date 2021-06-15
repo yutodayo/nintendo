@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { BaseButton } from "./BaseButton";
 
-export const PrimaryButton = styled(BaseButton)`
+export const MotivationButton = styled(BaseButton)`
   &:hover {
-    background-color: #7ac943;
+    background-color: #ff7bac;
   }
 `;
