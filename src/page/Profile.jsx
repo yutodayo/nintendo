@@ -1,17 +1,15 @@
-import { useHistory } from "react-router-dom";
+import { Card } from "./Card.jsx/Card";
+import { SContainer } from "./SConteiner";
 
 export const Profile = () => {
-  const history = useHistory();
-  const onClickHighschool = () => history.push("/highschool");
-  const onClickUniv = () => history.push("/univ");
-  const onClickMotivation = () => history.push("/motivation");
   return (
-    <div>
-      <button>自己紹介</button>
-      <button onClick={onClickHighschool}>高校での取り組み</button>
-      <button onClick={onClickUniv}>大学での取り組み</button>
-      <button onClick={onClickMotivation}>志望動機</button>
+    <SContainer>
       <h1>自己紹介</h1>
-    </div>
+      <Card>
+        <h1>名前</h1>
+        <h1>大学</h1>
+        <h1>研究</h1>
+      </Card>
+    </SContainer>
   );
 };

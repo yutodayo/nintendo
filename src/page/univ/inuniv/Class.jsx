@@ -1,7 +1,15 @@
+import { Card } from "../../Card.jsx/Card";
+import { SContainer } from "../../SConteiner";
+import { InUnivButton } from "./InUnivButton";
+
 export const Class = () => {
   return (
-    <div>
-      <h1>授業</h1>
-    </div>
+    <SContainer>
+      <h1>学内での取り組み</h1>
+      <InUnivButton />
+      <Card>
+        <div>授業</div>
+      </Card>
+    </SContainer>
   );
 };
